@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,277 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="segundoparcialmoviles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLL-FJ-j76">
+                                <rect key="frame" x="111" y="150" width="192" height="30"/>
+                                <state key="normal" title="Leon africano"/>
+                                <connections>
+                                    <segue destination="Z7g-Vi-WDg" kind="show" id="voL-1I-Ckk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcT-MT-aVM">
+                                <rect key="frame" x="111" y="220" width="192" height="30"/>
+                                <state key="normal" title="Tigre de bengala"/>
+                                <connections>
+                                    <segue destination="qaO-vN-pdU" kind="show" id="M9z-w2-1r2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrd-SH-O4r">
+                                <rect key="frame" x="111" y="290" width="192" height="30"/>
+                                <state key="normal" title="Oso polar"/>
+                                <connections>
+                                    <segue destination="GZ8-Fj-JK6" kind="show" id="V3R-T4-1oS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMZ-fj-sYB">
+                                <rect key="frame" x="111" y="360" width="192" height="30"/>
+                                <state key="normal" title="Aguila real"/>
+                                <connections>
+                                    <segue destination="UUd-On-DdF" kind="show" id="CIX-HF-jyV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoologico" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-q0-8aF">
+                                <rect key="frame" x="146" y="44" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PcT-MT-aVM" secondAttribute="trailing" constant="111" id="0DM-fg-eyp"/>
+                            <constraint firstItem="hrd-SH-O4r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="1Dg-uy-C69"/>
+                            <constraint firstItem="wMZ-fj-sYB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="8PZ-au-EBY"/>
+                            <constraint firstItem="PcT-MT-aVM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="9O7-VO-f4I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HLL-FJ-j76" secondAttribute="trailing" constant="111" id="HSt-gM-rSF"/>
+                            <constraint firstItem="tdG-q0-8aF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JAX-Q1-OZZ"/>
+                            <constraint firstItem="PcT-MT-aVM" firstAttribute="top" secondItem="HLL-FJ-j76" secondAttribute="bottom" constant="40" id="Kpa-Gt-kcV"/>
+                            <constraint firstItem="hrd-SH-O4r" firstAttribute="top" secondItem="PcT-MT-aVM" secondAttribute="bottom" constant="40" id="PIK-ed-rSC"/>
+                            <constraint firstItem="tdG-q0-8aF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="WRW-gh-3w0"/>
+                            <constraint firstItem="HLL-FJ-j76" firstAttribute="top" secondItem="tdG-q0-8aF" secondAttribute="bottom" constant="85" id="aZ7-wU-68Q"/>
+                            <constraint firstItem="HLL-FJ-j76" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="bcM-c2-Osq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tdG-q0-8aF" secondAttribute="trailing" constant="145" id="edS-ce-97k"/>
+                            <constraint firstItem="wMZ-fj-sYB" firstAttribute="top" secondItem="hrd-SH-O4r" secondAttribute="bottom" constant="40" id="ghl-um-hy4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wMZ-fj-sYB" secondAttribute="trailing" constant="111" id="rxG-WU-tgc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hrd-SH-O4r" secondAttribute="trailing" constant="111" id="uEP-zh-9w9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oQw-1e-nZ3">
+            <objects>
+                <viewController id="Z7g-Vi-WDg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cAl-Bv-7AM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leon africano" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvO-oZ-Xh4">
+                                <rect key="frame" x="20" y="25" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DH0-8v-cti">
+                                <rect key="frame" x="345" y="20" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoH-uB-NFM">
+                                <rect key="frame" x="20" y="54" width="374" height="365.5"/>
+                                <string key="text">El león se caracteríza por el claro dimorfismo sexual que presenta. El macho es de mayor tamaño y tiene una enorme y espesa melena de coloración variable, según la edad del individuo, ya que lo jóvenes la presentan en tono amarillos, cafés o pardo rojizos, mientras que los viejos la tienen mucho más oscuro y puede ser completamente negra. La hembra es más pequeña y no presenta melena. La coloración general del cuerpo es dorada, aunque la región ventral es blanca o de tonos más claros. La punta de la cola es negra. La longitud del cuerpo en los machos varía de 1.7 a 2.5 m., mientras que la de la cola puede ser de 90 a 105 cm., y el peso va de los 150 a los 250 Kg. La longitud total del cuerpo de las hembras varía de 1.4 a 1.75 m., su cola mide de 70 a 100 cm y el peso va de 120 a 182 Kg.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjm-yP-Dte">
+                                <rect key="frame" x="292" y="25" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hXU-Hb-mep" firstAttribute="trailing" secondItem="DH0-8v-cti" secondAttribute="trailing" constant="20" id="0oD-Gw-6rH"/>
+                            <constraint firstItem="BoH-uB-NFM" firstAttribute="top" secondItem="DH0-8v-cti" secondAttribute="bottom" constant="3" id="9zG-ZY-aL0"/>
+                            <constraint firstItem="hXU-Hb-mep" firstAttribute="trailing" secondItem="BoH-uB-NFM" secondAttribute="trailing" constant="20" id="DNe-PP-l0E"/>
+                            <constraint firstItem="BoH-uB-NFM" firstAttribute="leading" secondItem="hXU-Hb-mep" secondAttribute="leading" constant="20" id="DmQ-io-u2i"/>
+                            <constraint firstItem="DH0-8v-cti" firstAttribute="top" secondItem="hXU-Hb-mep" secondAttribute="top" constant="20" id="JNL-Lx-BNA"/>
+                            <constraint firstItem="DH0-8v-cti" firstAttribute="leading" secondItem="Jjm-yP-Dte" secondAttribute="trailing" constant="14" id="OmF-Sk-ixr"/>
+                            <constraint firstItem="jvO-oZ-Xh4" firstAttribute="top" secondItem="hXU-Hb-mep" secondAttribute="top" constant="25" id="P8M-lo-m1J"/>
+                            <constraint firstItem="jvO-oZ-Xh4" firstAttribute="leading" secondItem="hXU-Hb-mep" secondAttribute="leading" constant="20" id="dyd-qJ-nIh"/>
+                            <constraint firstItem="Jjm-yP-Dte" firstAttribute="top" secondItem="hXU-Hb-mep" secondAttribute="top" constant="25" id="eU1-bQ-Nvz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hXU-Hb-mep"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="E7I-Sx-NKU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3l-V4-6Fl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="-5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="f06-x0-ptm">
+            <objects>
+                <viewController id="UUd-On-DdF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cfv-QD-ubj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aguila real" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Er0-lK-ktn">
+                                <rect key="frame" x="20" y="25" width="79.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vqo-w4-Fe1">
+                                <rect key="frame" x="345" y="20" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hC8-W7-3yG">
+                                <rect key="frame" x="20" y="54" width="374" height="426.5"/>
+                                <mutableString key="text">El águila real es un ave de gran tamaño. La hembra es más grande que el macho, ya que puede medir hasta 95 cm de largo y llegar a alcanzar hasta los 5 Kg. de peso, mientras el macho puede medir 87 cm. de largo y alcanza un peso de 3 Kg. como máximo.
+El plumaje es en general de una tonalidad café oscuro con algunas plumas de la cola y las alas de color blanco. Las patas y la cera del pico son amarillas. El pico y las garras son negros. El iris es de color avellana.
+El águila real es un volador majestuoso. Puede planear por horas sin esfuerzo, o bien desarrolla una alta velocidad cuando bate las alas. Es monógama y cada pareja dispone de un territorio particular. El tamaño del territorio es variable. Aparentemente, el territorio no es defendido de manera vigorosa de otras parejas. En las latitudes ubicadas muy al norte es migratoria, pero más al sur permanece todo el año en los lugares en que habita.</mutableString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob5-Vf-8ov">
+                                <rect key="frame" x="292" y="25" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Er0-lK-ktn" firstAttribute="top" secondItem="Kc3-IB-3A5" secondAttribute="top" constant="25" id="8Vp-AU-uFc"/>
+                            <constraint firstItem="ob5-Vf-8ov" firstAttribute="top" secondItem="Kc3-IB-3A5" secondAttribute="top" constant="25" id="LRK-J6-O8g"/>
+                            <constraint firstItem="hC8-W7-3yG" firstAttribute="top" secondItem="Vqo-w4-Fe1" secondAttribute="bottom" constant="3" id="MQ2-DK-UWh"/>
+                            <constraint firstItem="Kc3-IB-3A5" firstAttribute="trailing" secondItem="Vqo-w4-Fe1" secondAttribute="trailing" constant="20" id="RHZ-ww-Geu"/>
+                            <constraint firstItem="Er0-lK-ktn" firstAttribute="leading" secondItem="Kc3-IB-3A5" secondAttribute="leading" constant="20" id="dSD-KY-0Pw"/>
+                            <constraint firstItem="Kc3-IB-3A5" firstAttribute="trailing" secondItem="hC8-W7-3yG" secondAttribute="trailing" constant="20" id="idS-dw-0zs"/>
+                            <constraint firstItem="Vqo-w4-Fe1" firstAttribute="leading" secondItem="ob5-Vf-8ov" secondAttribute="trailing" constant="14" id="l4m-m9-bW0"/>
+                            <constraint firstItem="hC8-W7-3yG" firstAttribute="leading" secondItem="Kc3-IB-3A5" secondAttribute="leading" constant="20" id="o6Q-OH-Tck"/>
+                            <constraint firstItem="Vqo-w4-Fe1" firstAttribute="top" secondItem="Kc3-IB-3A5" secondAttribute="top" constant="20" id="vOG-he-STj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kc3-IB-3A5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DyG-UN-ksH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4d-4X-xKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="670"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YGv-Cr-Qg1">
+            <objects>
+                <viewController id="GZ8-Fj-JK6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Am9-xo-G8F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oso polar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asJ-j2-a1d">
+                                <rect key="frame" x="20" y="25" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ek-rY-uFo">
+                                <rect key="frame" x="345" y="20" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kET-JX-9qb">
+                                <rect key="frame" x="20" y="54" width="374" height="467"/>
+                                <mutableString key="text">El oso polar se distribuye en regiones árticas alrededor del Polo Norte. Algunos emigran durante el verano. Generalmente viven solos y sólo se buscan en época de apareamiento (marzo a junio). Son animales muy hábiles en el agua donde son capaces de nadar hasta a una velocidad de 6.5 Km/hr.
+Su mayor actividad parece estar destinada al primer tercio del día. Desde julio hasta diciembre suelen descansar aparentemente para ahorrar energía en forma de grasa. Solo las hembras hacen sus madrigueras cuando el tiempo es malo, especialmente las que están embarazadas, hibernando ahí por largos periodos de tiempo. El periodo de gestación dura aproximadamente 195 a 265 días. Durante la época de hibernación corporal. Se han encontrado madrigueras excavadas en el hielo de hasta 3 m. de profundidad. Las crías son ciegas al nacer y alcanzan un peso de 600 grs cada uno. En primavera la hembra sale con sus pequeños oseznos, ya con varios meses de edad y pesando de 10 a 15 Kg.</mutableString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efA-T5-HFB">
+                                <rect key="frame" x="292" y="25" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kET-JX-9qb" firstAttribute="leading" secondItem="4X7-On-dNo" secondAttribute="leading" constant="20" id="1B5-vi-oIR"/>
+                            <constraint firstItem="7Ek-rY-uFo" firstAttribute="leading" secondItem="efA-T5-HFB" secondAttribute="trailing" constant="14" id="AO5-n1-lWN"/>
+                            <constraint firstItem="4X7-On-dNo" firstAttribute="trailing" secondItem="kET-JX-9qb" secondAttribute="trailing" constant="20" id="CXo-6E-y0r"/>
+                            <constraint firstItem="asJ-j2-a1d" firstAttribute="top" secondItem="4X7-On-dNo" secondAttribute="top" constant="25" id="KgJ-Tm-v8G"/>
+                            <constraint firstItem="asJ-j2-a1d" firstAttribute="leading" secondItem="4X7-On-dNo" secondAttribute="leading" constant="20" id="LKv-ES-1gI"/>
+                            <constraint firstItem="7Ek-rY-uFo" firstAttribute="top" secondItem="4X7-On-dNo" secondAttribute="top" constant="20" id="SwP-Zh-LWR"/>
+                            <constraint firstItem="kET-JX-9qb" firstAttribute="top" secondItem="7Ek-rY-uFo" secondAttribute="bottom" constant="3" id="YdL-iF-ZEX"/>
+                            <constraint firstItem="4X7-On-dNo" firstAttribute="trailing" secondItem="7Ek-rY-uFo" secondAttribute="trailing" constant="20" id="cSx-QS-gn0"/>
+                            <constraint firstItem="efA-T5-HFB" firstAttribute="top" secondItem="4X7-On-dNo" secondAttribute="top" constant="25" id="n46-YX-tJq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4X7-On-dNo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W9t-5b-bBd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lju-vg-aV2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="670"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cf0-gU-i5o">
+            <objects>
+                <viewController id="qaO-vN-pdU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gsx-Zh-fQb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tigre de bengala" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0d-vW-Laj">
+                                <rect key="frame" x="20" y="25" width="128.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mag-HC-qIp">
+                                <rect key="frame" x="345" y="20" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNc-Et-P9d">
+                                <rect key="frame" x="20" y="54" width="374" height="223.5"/>
+                                <string key="text">Existen 6 sub-especies de tigres. En esta especie la longitud corporal total es de 1.4 a 2.8, mientras la de la cola puede ser de 60 a 95 cm. El color de fondo de las partes superiores varía de anaranjado-rojizo a ocre rojizo y las partes inferiores son de tono cremoso o blanco. La cabeza, el cuerpo, la cola y las patas tienen una serie de rayas generalmente se disponen en plano vertical. En algunos especímenes, las rayas están reducidas en los hombros, patas delanteras y flanco anteriores.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rP-2p-hWp">
+                                <rect key="frame" x="292" y="25" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ahB-PW-w3F" firstAttribute="trailing" secondItem="BNc-Et-P9d" secondAttribute="trailing" constant="20" id="1JM-oP-Qns"/>
+                            <constraint firstItem="mag-HC-qIp" firstAttribute="top" secondItem="ahB-PW-w3F" secondAttribute="top" constant="20" id="EWl-9g-raJ"/>
+                            <constraint firstItem="h0d-vW-Laj" firstAttribute="leading" secondItem="ahB-PW-w3F" secondAttribute="leading" constant="20" id="He3-xp-ZRt"/>
+                            <constraint firstItem="7rP-2p-hWp" firstAttribute="top" secondItem="ahB-PW-w3F" secondAttribute="top" constant="25" id="JLZ-FW-qSf"/>
+                            <constraint firstItem="mag-HC-qIp" firstAttribute="leading" secondItem="7rP-2p-hWp" secondAttribute="trailing" constant="14" id="Qxf-O5-Kn6"/>
+                            <constraint firstItem="ahB-PW-w3F" firstAttribute="trailing" secondItem="mag-HC-qIp" secondAttribute="trailing" constant="20" id="Szd-Q7-huT"/>
+                            <constraint firstItem="BNc-Et-P9d" firstAttribute="leading" secondItem="ahB-PW-w3F" secondAttribute="leading" constant="20" id="XEl-zW-R2Y"/>
+                            <constraint firstItem="BNc-Et-P9d" firstAttribute="top" secondItem="mag-HC-qIp" secondAttribute="bottom" constant="3" id="etR-0S-kaH"/>
+                            <constraint firstItem="h0d-vW-Laj" firstAttribute="top" secondItem="ahB-PW-w3F" secondAttribute="top" constant="25" id="phG-tK-EIA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ahB-PW-w3F"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Eq-NO-XeE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BxI-xM-psy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="-5"/>
         </scene>
     </scenes>
 </document>
